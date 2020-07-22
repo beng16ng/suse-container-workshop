@@ -73,7 +73,7 @@ Ensure the pod is running before continue.
 To run a containerized mysql client, execute the command below.
 
 ```
-kubectl run -n suseapp -it --rm --image=mysql:5.6 --restart=Never mysql-client-$RANDOM -- mysql -h mysql -ppassword
+kubectl run -n suseapp -it --rm --image=mysql:5.6 --restart=Never mysql-client-$RANDOM -- mysql -h mysql -ppassword mysql
 ```
 
 After a while (downloading the image), it will show the following prompt.
